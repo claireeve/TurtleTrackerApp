@@ -9,4 +9,18 @@
 # Date:   Fall 2022
 #--------------------------------------------------------------
 
-#waaaaaaaaaaaaaa
+# copy and paste a line of data as the lineString variable value
+lineString = "20616	29051	7/3/2003 9:13	3	66	33.898	-77.958	27.369	-46.309	6	0	-126	529	3	401 651134.7	0"
+
+# use the split command to parse the items in lineString into a list obj
+lineData = lineString.split()
+
+# Assign variables to specific items in the list
+record_id = lineData[0]    # ARGOS tracking record ID
+obs_date = lineData[2]    # Observation date
+obs_lc = lineData          # Observation location class
+obs_lat = lineData[5]      # Observation latitude
+obs_lon = lineData[6]      # Observation longitude 
+
+# Print information to the user
+print(f"Record {recordID} indicates Sara was seen at {obs_lat}N and {obs_lon}W on {obs_date}")
