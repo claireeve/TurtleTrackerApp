@@ -18,9 +18,9 @@ lineData = lineString.split()
 # Assign variables to specific items in the list
 record_id = lineData[0]    # ARGOS tracking record ID
 obs_date = lineData[2]    # Observation date
-obs_lc = lineData          # Observation location class
-obs_lat = lineData[5]      # Observation latitude
-obs_lon = lineData[6]      # Observation longitude 
+obs_lc = lineData[4]          # Observation location class
+obs_lat = lineData[6]      # Observation latitude
+obs_lon = lineData[7]      # Observation longitude 
 
 # Print information to the user
 print(f"Record {recordID} indicates Sara was seen at {obs_lat}N and {obs_lon}W on {obs_date}")
